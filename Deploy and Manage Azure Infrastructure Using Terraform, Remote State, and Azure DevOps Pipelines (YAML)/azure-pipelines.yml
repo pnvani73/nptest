@@ -13,20 +13,20 @@ pool:
 variables:
   - group: Terraform-BuildVariables
   - name: subscription_id
-    value: "5b3436-563d-4ed9-a045-8de8987460"
+   value: "5465cc84-e33c-4f4c-83d0-71f0055c589b"
   - name: application_id
-    value: "0db23492-a623-4c37-a03c-425463f167c3"
+    value: "6b05448c-50f9-4c84-8572-f175b7343d5f"
   - name: tenant_id
-    value: "6434534-54e9-4fce-45-f00c23454c1f"
+    value: "9cd68ab9-f587-417e-9856-148a0780a5d3"
   - name: storage_accounts
-    value: "sa01azuredevops"
+    value: "np01azuredevops"
   - name: blob_storage
     value: container01-azuredevops
   - name: state_file
     value: tf-statefile.state
   - name: sa-resource_group
     value: AzureDevOps
-
+ 
 steps:
   - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
     displayName: 'Install Terraform'
